@@ -230,7 +230,6 @@
             this.length--;
             return node;
         }
-        //TODO Slice Method
         public DoublyLinkedList Slice(int start = 0, int? end = null)
         {   
             DoublyLinkedList newList = new DoublyLinkedList();
@@ -247,7 +246,5 @@
             return newList;
             
         }
-
-        //TODO Splice Method
     }
 }
