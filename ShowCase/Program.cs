@@ -19,12 +19,8 @@ class Program
         
         Console.WriteLine($"Length: {newList.length}\n");
 
-        var slicedList = newList.Slice(-1,36);
-
-
         newList.PrintList();
 
         Console.WriteLine("Sliced List");
-        slicedList.PrintList();
     }
 }
