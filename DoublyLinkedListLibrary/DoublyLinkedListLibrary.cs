@@ -231,6 +231,22 @@
             return node;
         }
         //TODO Slice Method
+        public DoublyLinkedList Slice(int start = 0, int? end = null)
+        {   
+            DoublyLinkedList newList = new DoublyLinkedList();
+
+            if(end == null) end = this.length;
+
+            while(start < end)
+            {
+                string currentValue = this.FindByIndex(start).value;
+                newList.Push(currentValue);
+                start++;
+            }
+
+            return newList;
+            
+        }
 
         //TODO Splice Method
     }

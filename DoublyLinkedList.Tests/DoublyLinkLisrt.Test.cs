@@ -496,4 +496,90 @@ public class DoublyLinkedListTests
         // Assert
         Assert.Equal(expected, exception.Message);
     }
+    //* Slice Method
+    [Fact]
+    public void Slice_ShouldReturnANewList()
+    {
+        // Arrange
+        var originalList = InitializeListForTest();
+        var expectedFirstNodeValue = "This"; // Index 2
+        var expectedSecondNodeValue = "Is"; // Index 3
+        var expectedThirdNodeValue = "A"; // Index 4
+    
+        // Act
+        var newList = originalList.Slice(2, 5);
+        var actualFirstNodeValue = newList.head.value;
+        var actualSecondNodeValue = newList.head.next.value;
+        var actualThirdNodeValue = newList.tail.value;
+    
+        // Assert
+        Assert.Equal(expectedFirstNodeValue, actualFirstNodeValue);
+        Assert.Equal(expectedSecondNodeValue, actualSecondNodeValue);
+        Assert.Equal(expectedThirdNodeValue, actualThirdNodeValue);
+    }
+    [Theory]
+    [InlineData(-1, 5)]
+    [InlineData(2, 28)]
+    public void Slice_ShouldThrowArgumentOutOfRangeException(int start, int end)
+    {
+        // Arrange
+        var originalList = InitializeListForTest();
+        string expected = new ArgumentOutOfRangeException().Message;
+    
+        // Act
+        Action actual = () => originalList.Slice(start, end);
+        ArgumentOutOfRangeException exception = Assert.Throws<ArgumentOutOfRangeException>(actual);
+    
+        // Assert
+        Assert.Equal(expected, exception.Message);
+    }
+    [Fact]
+    public void Slice_ShouldMaintainOriginalList()
+    {
+        // Arrange
+        var originalList = InitializeListForTest();
+        string expectedThirdNodeValue = originalList.FindByIndex(2).value;
+        string expectedFourthNodeValue = originalList.FindByIndex(3).value;
+        string expectedFifthNodeValue = originalList.FindByIndex(4).value;
+        
+        // Act
+        originalList.Slice(2, 5);
+        string actualThirdNodeValue = originalList.FindByIndex(2).value;
+        string actualFourthNodeValue = originalList.FindByIndex(3).value;
+        string actualFifthNodeValue = originalList.FindByIndex(4).value;
+
+        // Assert
+        Assert.Equal(expectedThirdNodeValue, actualThirdNodeValue);
+        Assert.Equal(expectedFourthNodeValue, actualFourthNodeValue);
+        Assert.Equal(expectedFifthNodeValue, actualFifthNodeValue);
+    }
+    [Fact]
+    public void Slice_ShouldMaintainOriginalListLength()
+    {
+        // Arrange
+        var originalList = InitializeListForTest();
+        int expected = originalList.length;
+    
+        // Act
+        var newList = originalList.Slice(2, 5);
+        int actual = originalList.length;
+    
+        // Assert
+        Assert.Equal(expected, actual);
+
+    }
+    [Fact]
+    public void Slice_ShouldUpdateNewListLength()
+    {
+        // Arrange
+        var originalList = InitializeListForTest();
+        int expected = 3;
+    
+        // Act
+        var newList = originalList.Slice(2, 5);
+        int actual = newList.length;
+
+        // Assert
+        Assert.Equal(expected, actual);
+    }
 }

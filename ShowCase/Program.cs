@@ -19,10 +19,12 @@ class Program
         
         Console.WriteLine($"Length: {newList.length}\n");
 
+        var slicedList = newList.Slice(-1,36);
 
-        Node removedNode = newList.FindByIndexAndRemove(7);
-        Console.WriteLine($"Removed this node:\t{removedNode.value}");
 
         newList.PrintList();
+
+        Console.WriteLine("Sliced List");
+        slicedList.PrintList();
     }
 }
