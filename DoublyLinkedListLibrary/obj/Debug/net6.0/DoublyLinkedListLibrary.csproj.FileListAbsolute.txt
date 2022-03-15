@@ -1,0 +1,12 @@
+/home/edrdmolina/Learning-Dotnet/DoublyLinkedList/DoublyLinkedListLibrary/bin/Debug/net6.0/DoublyLinkedListLibrary.deps.json
+/home/edrdmolina/Learning-Dotnet/DoublyLinkedList/DoublyLinkedListLibrary/bin/Debug/net6.0/DoublyLinkedListLibrary.dll
+/home/edrdmolina/Learning-Dotnet/DoublyLinkedList/DoublyLinkedListLibrary/bin/Debug/net6.0/DoublyLinkedListLibrary.pdb
+/home/edrdmolina/Learning-Dotnet/DoublyLinkedList/DoublyLinkedListLibrary/obj/Debug/net6.0/DoublyLinkedListLibrary.csproj.AssemblyReference.cache
+/home/edrdmolina/Learning-Dotnet/DoublyLinkedList/DoublyLinkedListLibrary/obj/Debug/net6.0/DoublyLinkedListLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/home/edrdmolina/Learning-Dotnet/DoublyLinkedList/DoublyLinkedListLibrary/obj/Debug/net6.0/DoublyLinkedListLibrary.AssemblyInfoInputs.cache
+/home/edrdmolina/Learning-Dotnet/DoublyLinkedList/DoublyLinkedListLibrary/obj/Debug/net6.0/DoublyLinkedListLibrary.AssemblyInfo.cs
+/home/edrdmolina/Learning-Dotnet/DoublyLinkedList/DoublyLinkedListLibrary/obj/Debug/net6.0/DoublyLinkedListLibrary.csproj.CoreCompileInputs.cache
+/home/edrdmolina/Learning-Dotnet/DoublyLinkedList/DoublyLinkedListLibrary/obj/Debug/net6.0/DoublyLinkedListLibrary.dll
+/home/edrdmolina/Learning-Dotnet/DoublyLinkedList/DoublyLinkedListLibrary/obj/Debug/net6.0/refint/DoublyLinkedListLibrary.dll
+/home/edrdmolina/Learning-Dotnet/DoublyLinkedList/DoublyLinkedListLibrary/obj/Debug/net6.0/DoublyLinkedListLibrary.pdb
+/home/edrdmolina/Learning-Dotnet/DoublyLinkedList/DoublyLinkedListLibrary/obj/Debug/net6.0/ref/DoublyLinkedListLibrary.dll
